@@ -1,5 +1,7 @@
 body {
-    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
 }
 
 ul {
@@ -18,7 +20,7 @@ a {
 .main {
     display: flex;
     flex-direction: column;
-    padding: 10px 150px;
+    padding: 10px 50px;
     color: white;
     background-color: #1F2937;
 }
@@ -44,7 +46,7 @@ a {
 }
 
 .left {
-    flex: 1;
+    flex: 0 1 400px;
     padding-right: 20px;
 }
 
@@ -70,7 +72,7 @@ button {
 }
 
 .right {
-    flex: 1;
+    flex: 0 1 400px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -86,6 +88,7 @@ button {
 }
 
 .subtitle {
+    flex: 1;
     font-size: 36px;
     font-weight: 900;
     color: #1F2937;
@@ -93,10 +96,12 @@ button {
 }
 
 .gallery {
+    flex: 0 1 auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     gap: 30px;
+    padding: 0 50px;
 }
 
 .item {
@@ -106,11 +111,21 @@ button {
     color: black;
 }
 
+.image {
+    border-style: solid;
+    border-width: 4px;
+    border-radius: 10px;
+    border-color: #3882F6;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
 .quote {
     display: flex;
     flex-direction: column;
     background-color: #E5E7EB;
-    padding: 100px 250px;
+    padding: 100px 50px;
+    align-items: center;
 }
 
 .text {
@@ -118,28 +133,37 @@ button {
     font-weight: 100;
     font-style: italic;
     color: #1e2229;
+    margin-bottom: 10px;
+    display: flex;
+    width: 700px;
+}
+
+p {
+    flex: 0 1 700px;
 }
 
 .author {
     font-size: 28px;
     font-weight: 700;
-    align-self: flex-end;
-    margin-right: 20px;
+    margin-left: 400px;
 }
 
 .cta {
     display: flex;
     justify-content: space-evenly;
-    padding: 75px 150px;
+    align-items: center;
+    padding: 75px 50px;
 }
 
 .container {
-    flex: 1;
+    flex: 0 1 650px;
     background-color: #3882F6;
     border-radius: 10px;
     padding: 40px 75px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    gap: 20px;
 }
 
 .hook .title {
@@ -154,7 +178,6 @@ button {
 
 .container button {
     border-color: #F9FAF8;
-    align-self: center;
 }
 
 .footer {
